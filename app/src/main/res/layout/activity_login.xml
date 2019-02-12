@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/imagen_de_fondo"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fondo" />
+
+    <TextView
+        android:id="@+id/titulo"
+
+
+       style="@style/etiquetas"
+
+        android:layout_marginTop="30dp"
+        android:text="@string/mis_tareas"
+
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/subtitulo"
+        style="@style/etiquetas"
+        android:layout_below="@id/titulo"
+
+        android:layout_marginTop="10dp"
+        android:text="@string/majs"
+
+        android:textSize="35sp"
+
+        android:layout_marginBottom="170dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/identificadorLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtitulo"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-140dp"
+        android:layout_marginRight="16dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/usuario"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp">
+
+                <requestFocus />
+            </android.support.design.widget.TextInputEditText>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/contrasenya"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botonLogin"
+        android:layout_below="@id/identificadorLinearLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="16dp"
+
+        android:background="@color/colorAccent"
+
+        android:text="@string/aceptar_login"
+        android:textSize="25sp"/>
+
+
+    <TextView
+        android:id="@+id/cuentaNueva"
+        style="@style/etiquetas"
+        android:layout_below="@id/botonLogin"
+
+        android:layout_marginTop="40dp"
+        android:text="@string/crear_cuenta_nueva"
+
+        android:textSize="20sp"
+        />
+
+
+
+
+
+
+</RelativeLayout>

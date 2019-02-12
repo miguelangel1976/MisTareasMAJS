@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--Estilo que engroba los elementos comunes de las Etiquetas
+    de TextView del panel de Login.
+
+     Se introducen los "nombres" y "valores" de los atributos que
+     componen el Estilo.
+     -->
+
+    <style name="etiquetas">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+
+
+    </style>
+
+    <style name="cajas_de_texto">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

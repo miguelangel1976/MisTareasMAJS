@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Animación de Translación verticalmente hacia arriba
+
+    -->
+    <translate
+        android:fromYDelta="400"
+        android:duration="3000"
+        />
+
+    <!-- A la vez de que se realice el desplazamiento vertical,
+    el texto pasa de transparente toAlpha = "0"
+    a totalmente opaco toAlpha = "1" (que se va a ver)
+
+    -->
+
+    <alpha
+     android:duration = "2000"
+     android:fromAlpha="0"
+     android:toAlpha="1"
+    />
+
+
+</set>
