@@ -56,6 +56,7 @@
             android:layout_height="wrap_content">
 
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/cajaUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/usuario"
@@ -75,6 +76,7 @@
 
 
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/cajaContrasenya"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/contrasenya"
@@ -98,10 +100,11 @@
         android:layout_marginTop="30dp"
         android:layout_marginRight="16dp"
 
-        android:background="@color/colorAccent"
+        android:background="@drawable/boton"
 
         android:text="@string/aceptar_login"
-        android:textSize="25sp"/>
+        android:textSize="25sp"
+        android:onClick="login" />
 
 
     <TextView
@@ -113,6 +116,7 @@
         android:text="@string/crear_cuenta_nueva"
 
         android:textSize="20sp"
+        android:onClick="crearCuenta"
         />
 
 

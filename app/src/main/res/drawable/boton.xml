@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Cuando el botón se encuentra presionado pone el Color Acentuado -->
+    <item android:drawable="@color/colorAccent" android:state_pressed="true" />
+
+    <!-- En el caso de que la condición anterior no se cumpla, se ejecuta la siguiente condición -->
+    <!-- Cuando el botón no se encuentra presionado se visualiza en Color Primario -->
+    <item android:drawable="@color/colorPrimary" android:state_pressed="false" />
+
 </selector>
