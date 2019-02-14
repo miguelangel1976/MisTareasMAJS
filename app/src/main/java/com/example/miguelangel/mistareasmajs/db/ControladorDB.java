@@ -214,6 +214,7 @@ public class ControladorDB extends SQLiteOpenHelper {
     //Recibe como parámetro el nombre de la tarea a Borrar.
 
     //Este métood es llamado desde el Método "borrarTarea" del MainActivity
+    
     public void borrarTarea(String tarea){
        // 1)Abrir la Base de Datos en modo Lectura y Escritura, debido a que se van a Borrar Datos.
         SQLiteDatabase db=this.getWritableDatabase();
