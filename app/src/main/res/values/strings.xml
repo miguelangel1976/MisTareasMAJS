@@ -7,4 +7,5 @@
     <string name="contrasenya">Contraseña</string>
     <string name="aceptar_login">Aceptar Login</string>
     <string name="crear_cuenta_nueva">Crear una Cuenta Nueva</string>
+    <string name="terminado">TERMINADO</string>
 </resources>

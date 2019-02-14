@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <!--
+    Alinear texto con el botón con: aligBaseLine
+    -->
+
+    <TextView
+        android:id="@+id/titulo_tarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@id/button"/>
+
+    <!--
+    El Botón se alinea a la derecha con el Padre con alignParentRight
+    y con una separación de 16dp que se le coloca al padre para que todos
+    los TextView estén alineados con 16dp: android:padding="16dp"
+    -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/terminado"
+        android:layout_alignParentRight="true"
+        android:onClick="borrarTarea"/>
+</RelativeLayout>
