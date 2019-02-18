@@ -22,12 +22,32 @@
     y con una separación de 16dp que se le coloca al padre para que todos
     los TextView estén alineados con 16dp: android:padding="16dp"
     -->
+
+
+    <!--MODIFICACIÓN: SE PONE AHORA UNA IMÁGEN EN EL BOTON
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/terminado"
         android:layout_alignParentRight="true"
+        android:onClick="borrarTarea"/>
+
+        -->
+
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:padding="0dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/icono_borrar"
+        android:layout_alignParentRight="true"
+        android:contentDescription="Botón Para Borrar Registro."
         android:onClick="borrarTarea"/>
 </RelativeLayout>
 

@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:contentDescription="@string/imagen_de_fondo"
         android:scaleType="fitXY"
-        android:src="@mipmap/fondo" />
+        android:src="@mipmap/fondo_cielo" />
 
     <TextView
         android:id="@+id/titulo"

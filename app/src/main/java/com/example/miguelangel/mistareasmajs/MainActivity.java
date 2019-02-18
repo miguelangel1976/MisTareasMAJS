@@ -4,9 +4,11 @@ import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -119,7 +121,33 @@ public class MainActivity extends AppCompatActivity {
 
 
                         //Mensaje de Prueba Toast
-                        Toast.makeText(MainActivity.this, "Se ha añadido una nueva tarea.", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(MainActivity.this, "Se ha añadido una nueva tarea.", Toast.LENGTH_SHORT).show();
+
+
+                        //TOAST PERSONALIZADO AL ALMACENAR NUEVA TAREA
+
+                        Toast toastIntroducirDato = new Toast(getApplicationContext());
+                        LayoutInflater inflater = getLayoutInflater();
+                        //Se le indica el Archivo del Toast: "toast_Layout
+                        //y el Identificador del Toast:@+id/toastLayout"
+                        View layoutToast = inflater.inflate(R.layout.toast_layout,
+                                (ViewGroup) findViewById(R.id.toastLayout));
+
+                        //Se le indica el identificador del Texto de toast_layout
+                        // que es: android:id="@+id/texto_mensaje"
+
+                        //"layoutToast" es el componente creado en View
+                        TextView textoMensajeAdd =(TextView) layoutToast.findViewById(R.id.texto_mensaje);
+
+                        //Configuración del Texto
+                        textoMensajeAdd.setText("Se ha añadido una nueva tarea.");
+                        toastIntroducirDato.setDuration(Toast.LENGTH_SHORT);
+                        toastIntroducirDato.setView(layoutToast);
+                        toastIntroducirDato.show(); //Visualizar el Toast Creado
+
+
+
+
                     }//Fin del onClick
                 })//Fin del setPositiveButton
 
@@ -292,7 +320,34 @@ public class MainActivity extends AppCompatActivity {
         actualizarUI(); //Llamar al Método de "ACTUALIZAR INTERFAZ".
 
         //Mensaje de Prueba Toast
-        Toast.makeText(MainActivity.this, "Se ha Eliminado la tarea indicada.", Toast.LENGTH_SHORT).show();
+       // Toast.makeText(MainActivity.this, "Se ha Eliminado la tarea indicada.", Toast.LENGTH_SHORT).show();
+
+
+
+        //TOAST PERSONALIZADO AL ALMACENAR NUEVA TAREA
+
+        Toast toastBorrarDato = new Toast(getApplicationContext());
+        LayoutInflater inflater = getLayoutInflater();
+        //Se le indica el Archivo del Toast: "toast_Layout
+        //y el Identificador del Toast:@+id/toastLayout"
+        View layoutToast = inflater.inflate(R.layout.toast_layout,
+                (ViewGroup) findViewById(R.id.toastLayout));
+
+        //Se le indica el identificador del Texto de toast_layout
+        // que es: android:id="@+id/texto_mensaje"
+
+        //"layoutToast" es el componente creado en View
+        TextView textoMensajeBorrar =(TextView) layoutToast.findViewById(R.id.texto_mensaje);
+
+        //Configuración del Texto
+        textoMensajeBorrar.setText("Se ha Eliminado la tarea indicada.");
+        toastBorrarDato.setDuration(Toast.LENGTH_SHORT);
+        toastBorrarDato.setView(layoutToast);
+        toastBorrarDato.show(); //Visualizar el Toast Creado
+
+
+
+
 
 
     }//Fin del Método "borrarTarea"
